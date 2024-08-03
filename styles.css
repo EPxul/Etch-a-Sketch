@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#resizeButton {
+    position: absolute;
+    top: 35px;
+    margin-bottom: 20px; /* Space below the button */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none; /* Remove default border */
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#resizeButton:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+.container {
+    position:absolute;
+    top:120px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px; /* Fixed width for the total grid area */
+    height: 960px; /* Fixed height for the total grid area */
+    border: 1px solid #000;
+}
+
+.square {
+    box-sizing: border-box;
+    background-color: white; /* Initial background color */
+}
